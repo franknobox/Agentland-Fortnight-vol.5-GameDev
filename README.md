@@ -76,19 +76,19 @@ Assets/
 
 ## 六、Git 使用流程（极简）
 
--开始工作前
--git pull
--完成工作后
--git add .
--git commit -m "简要说明本次修改"
--git push
+- 开始工作前
+- git pull
+- 完成工作后
+- git add .
+- git commit -m "简要说明本次修改"
+- git push
 
 ## 七、资源使用约定（无 LFS 前提）
 
--避免提交超大资源文件
--建议资源类型：
--png / jpg
--wav / mp3（控制体积）
--不建议提交：
--psd 原文件
+- 避免提交超大资源文件
+- 建议资源类型：
+- png / jpg
+- wav / mp3（控制体积）
+- 不建议提交：
+- psd 原文件
 
