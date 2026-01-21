@@ -7,9 +7,9 @@ public class PlayerAction : MonoBehaviour
 {
     [Header("移动设置")]
     public float moveSpeed = 5f; // 移动速度
-    
+   
     private Rigidbody2D rb; // Rigidbody2D组件
-    private Animator animator; // 动画控制器
+    private   Animator anim; // 动画控制器    
     private Vector2 movement; // 存储移动输入
     
     void Awake()
@@ -25,7 +25,7 @@ public class PlayerAction : MonoBehaviour
         }
         
         // 自动获取Animator组件
-        animator = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
     }
     
     void Update()
@@ -37,11 +37,20 @@ public class PlayerAction : MonoBehaviour
         // 构建移动向量并归一化（使斜向移动不会更快）
         movement = new Vector2(horizontal, vertical).normalized;
         
+        // 根据水平移动方向翻转角色（左右转向）
+        if (Mathf.Abs(horizontal) > 0.1f)
+        {
+            // 向右移动：scale.x为正；向左移动：scale.x为负
+            Vector3 scale = transform.localScale;
+            scale.x = horizontal > 0 ? Mathf.Abs(scale.x) : -Mathf.Abs(scale.x);
+            transform.localScale = scale;
+        }
+        
         // 根据输入是否为零设置动画参数IsMoving
-        if (animator != null)
+        if (anim && anim != null)
         {
             bool isMoving = movement.magnitude > 0.1f;
-            animator.SetBool("IsMoving", isMoving);
+            anim.SetBool("IsMoving", isMoving);
         }
     }
     
