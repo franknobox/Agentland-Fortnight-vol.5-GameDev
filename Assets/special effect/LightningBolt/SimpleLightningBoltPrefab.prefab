@@ -76,7 +76,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Positions: []
   m_Parameters:
     serializedVersion: 3
@@ -158,9 +158,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946c0a34555a28e438f5da3cf715cd1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartObject: {fileID: 163122}
+  StartObject: {fileID: 8553630428380530801, guid: 86385e62561f1244391e294b46ea3833, type: 3}
   StartPosition: {x: 0, y: 0, z: 0}
-  EndObject: {fileID: 171180}
+  EndObject: {fileID: 2606482423503956238, guid: 3c5c9aa8f860227499a529f5eaa4817e, type: 3}
   EndPosition: {x: 0, y: 0, z: 0}
   Generations: 6
   Duration: 0.03
