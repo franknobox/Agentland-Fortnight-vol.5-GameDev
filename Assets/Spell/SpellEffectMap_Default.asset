@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d4217b943022b84aab422677c5f28bb, type: 3}
+  m_Name: SpellEffectMap_Default
+  m_EditorClassIdentifier: 
+  entries:
+  - spellId: fire
+    vfxPrefab: {fileID: 5370316824315474147, guid: 953ecda87407daf47ab7b73004ab0a73, type: 3}
+    sfxClip: {fileID: 8300000, guid: 21c4a490b24ba2045bc815f7626a40ef, type: 3}
+    followAnchor: 1
+    localOffset: {x: 0, y: 0, z: 0}
+    destroyDelay: 1.5
+  - spellId: frozen
+    vfxPrefab: {fileID: 100000, guid: 55ef76383372d3247a5fdac99ce12720, type: 3}
+    sfxClip: {fileID: 8300000, guid: 11aa4c12354220a4190f1d6496b99782, type: 3}
+    followAnchor: 1
+    localOffset: {x: 0, y: 0, z: 0}
+    destroyDelay: 1.5
+  - spellId: potions
+    vfxPrefab: {fileID: 3927953371448774659, guid: ef313bd401a439447829389e39450cf3, type: 3}
+    sfxClip: {fileID: 8300000, guid: 11aa4c12354220a4190f1d6496b99782, type: 3}
+    followAnchor: 0
+    localOffset: {x: -8.51, y: 2.67, z: 0}
+    destroyDelay: 1.5
+  - spellId: attack
+    vfxPrefab: {fileID: 4687903999823012801, guid: 272e6393cbd104e418fd7317f3d2be2a, type: 3}
+    sfxClip: {fileID: 8300000, guid: 11aa4c12354220a4190f1d6496b99782, type: 3}
+    followAnchor: 1
+    localOffset: {x: 0, y: 0, z: 0}
+    destroyDelay: 1.5
+  - spellId: book
+    vfxPrefab: {fileID: 9059356185386848846, guid: ba5d621ce2f97734d8a2b6277e79c82e, type: 3}
+    sfxClip: {fileID: 8300000, guid: 11aa4c12354220a4190f1d6496b99782, type: 3}
+    followAnchor: 0
+    localOffset: {x: 6.93, y: 0.54, z: 0}
+    destroyDelay: 1.5
+  - spellId: magic circle
+    vfxPrefab: {fileID: 9146277622902525644, guid: b1ee613dcd4549a41bd19f07e2b3a46d, type: 3}
+    sfxClip: {fileID: 8300000, guid: 11aa4c12354220a4190f1d6496b99782, type: 3}
+    followAnchor: 0
+    localOffset: {x: -2.63, y: -2.74, z: 0}
+    destroyDelay: 1.5
+  - spellId: coin
+    vfxPrefab: {fileID: 8774472321625885536, guid: 36834b6ac9dd1164899ca4fba0c7f5a6, type: 3}
+    sfxClip: {fileID: 8300000, guid: 11aa4c12354220a4190f1d6496b99782, type: 3}
+    followAnchor: 1
+    localOffset: {x: 0, y: 0, z: 0}
+    destroyDelay: 1.5
+  - spellId: explode
+    vfxPrefab: {fileID: 228008030001734350, guid: fd07bddf063f38243a9ed103b55f52a8, type: 3}
+    sfxClip: {fileID: 8300000, guid: 11aa4c12354220a4190f1d6496b99782, type: 3}
+    followAnchor: 1
+    localOffset: {x: 0, y: 0, z: 0}
+    destroyDelay: 1.5
+  - spellId: lightening
+    vfxPrefab: {fileID: 2863399027489563296, guid: ddf92eb1338c4894dbcaf0554e271dcb, type: 3}
+    sfxClip: {fileID: 8300000, guid: 11aa4c12354220a4190f1d6496b99782, type: 3}
+    followAnchor: 1
+    localOffset: {x: 0, y: 0, z: 0}
+    destroyDelay: 1.5
+  - spellId: air
+    vfxPrefab: {fileID: 5229616677905324478, guid: a4b23e453146e12468a3b03cbe36c135, type: 3}
+    sfxClip: {fileID: 8300000, guid: 11aa4c12354220a4190f1d6496b99782, type: 3}
+    followAnchor: 1
+    localOffset: {x: 0, y: 0, z: 0}
+    destroyDelay: 1.5
