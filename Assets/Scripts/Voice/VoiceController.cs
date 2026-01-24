@@ -24,6 +24,10 @@ public class VoiceController : MonoBehaviour
     [Range(0f, 1f)]
     public float minConfidence = 0.6f;
     
+    [Header("魔法卡片生成")]
+    [Tooltip("魔法卡片生成器")]
+    public MagicCardGenerator magicCardGenerator;
+    
     private PlayKit_AudioTranscriptionClient _transcriptionClient;
     private PlayKit_AIChatClient _chatClient;
     private bool _isInitialized = false;
@@ -385,6 +389,17 @@ fire > frozen > potions > attack > book > magic circle > coin > explode > lighte
             Debug.Log($"transcript: {transcript}");
             Debug.Log($"matchedKeyword: {result.matchedKeyword ?? ""}");
             Debug.Log($"spellId: {result.spellId ?? ""}");
+            
+            // 生成魔法卡片
+            if (magicCardGenerator != null && !string.IsNullOrEmpty(transcript))
+            {
+                string spellName = !string.IsNullOrEmpty(result.spellId) ? result.spellId : "Unknown";
+                magicCardGenerator.GenerateCardAsync(transcript, spellName).Forget();
+            }
+            else if (magicCardGenerator == null)
+            {
+                Debug.LogWarning("[VoiceController] MagicCardGenerator未设置，跳过卡片生成");
+            }
             
             // 检查结果并播放效果 
             if (result.confidence >= minConfidence && !string.IsNullOrEmpty(result.spellId))
